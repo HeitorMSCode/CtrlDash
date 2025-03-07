@@ -1,6 +1,6 @@
 # CtrlDash
 
-## -- Instrução de Instalação
+## Instrução de Instalação
 
 ### Pre requisitos
 
