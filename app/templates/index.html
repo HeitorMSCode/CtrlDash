@@ -1,0 +1,85 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %} CtrlDash | Inicio {% endblock %}
+
+{% block css %}
+	<link rel="stylesheet" href="{% static 'css/app-index.css' %}">
+{% endblock %}
+
+{% block 'content' %}
+	<!DOCTYPE html>
+	<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+	</head>
+	<body>
+		<div class="container-title">
+			<h1 class="title">Gerencie ganhos e gastos<br> com a <span class="ctrl-dash">CtrlDash</span></h1>
+			<p class="description">Tenha um forma de gerenciar e acompanhar seus gastos, ganhos e tudo oque precisar, a CtrlDash da a você um interface simples, documentação para ajuda-lo, e contem um suporte 24h.</p>
+		</div>
+
+		<div class="container">
+			<button class="button-get-started" >Comece</button>
+			<button class="button-how-to-use" >Como usar</button>
+		</div>
+
+		<div class="container-text-descripion">
+			<h2 class="text-what">Porquê criamos<br> a <span>CtrlDash</span></h2>
+			<p class="description-what">O CtrlDash foi inicialmente desenvolvido com o objetivo de oferecer uma solução prática e eficiente para o gerenciamento de suas transações financeiras. Com uma interface intuitiva e fácil de usar, o aplicativo permite que você cadastre suas transações de forma rápida e descomplicada, proporcionando uma experiência fluida e agradável. A proposta do CtrlDash é simplificar a organização financeira, ajudando você a ter mais controle e clareza sobre suas finanças diárias. Dessa maneira, o CtrlDash se torna um aliado valioso para melhorar sua saúde financeira, facilitar o acompanhamento de gastos e ajudar na tomada de decisões mais conscientes e assertivas.</p>
+		</div>
+
+		<div class="container-graphic">
+			<img class="graphic" src="../static/assets/stickman-viwer-graphic.png" alt="graphic">
+			<div class="text">
+				<h2 class="graphic-title">Você pode</h2>
+				<p class="graphic-description">Com o CtrlDash, eu posso gerar gráficos detalhados que me ajudam a visualizar todos os meus ganhos e gastos de forma clara e objetiva. O aplicativo oferece diferentes tipos de gráficos, como pizza, barras, linhas e muito mais, permitindo que eu analise minhas finanças sob diversas perspectivas. Essa variedade facilita a identificação de padrões de consumo, o acompanhamento da evolução dos meus rendimentos e me ajuda a tomar decisões financeiras de forma mais consciente e assertiva.</p>
+			</div>
+		</div>
+
+	<footer>
+        <div class="footer-content">
+            <div class="about-us">
+				<h3>Sobre nós</h3>
+				<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo iste corrupti doloribus odio sed!</p>
+				<ul class="socials">
+					<li><a href="{% url 'inicio_url' %}"><i class="fa-brands fa-facebook"></i></a></li>
+					<li><a href="{% url 'inicio_url' %}"><i class="fa-brands fa-x-twitter"></i></a></li>
+					<li><a href="{% url 'inicio_url' %}"><i class="fa-brands fa-google"></i></a></li>
+					<li><a href="{% url 'inicio_url' %}"><i class="fa-brands fa-youtube"></i></a></li>
+				</ul>
+			</div>
+			<div class="links-footer">
+				<h3>Links rapidos</h3>
+				<li style="margin-top: 5px;" ><a href="{% url 'inicio_url' %}">Inicio</a></li>
+				<li style="margin-top: 5px;" ><a href="{% url 'sobre_url' %}">Sobre</a></li>
+				<li style="margin-top: 5px;" ><a href="{% url 'inicio_url' %}">Como usar</a></li>
+				<li style="margin-top: 5px;" ><a href="{% url 'inicio_url' %}">Login</a></li>
+				<li style="margin-top: 5px;" ><a href="{% url 'inicio_url' %}">Cadastrar-se</a></li>
+			</div>
+			<div class="comunity">
+				<h3>Comunidades</h3>
+				<li style="margin-top: 5px;" ><a href="{% url 'inicio_url' %}">Youtube</a></li>
+				<li style="margin-top: 5px;" ><a href="{% url 'inicio_url' %}">Discord</a></li>
+				<li style="margin-top: 5px;" ><a href="{% url 'inicio_url' %}">Github</a></li>
+				<li style="margin-top: 5px;" ><a href="{% url 'inicio_url' %}">Telegram</a></li>
+				<li style="margin-top: 5px;" ><a href="{% url 'inicio_url' %}">WhatsApp</a></li>
+			</div>
+			<div class="report-bugs">
+				<h3>Reporte os bugs</h3>
+				<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo iste corrupti doloribus odio sed!</p>
+				<button class="report-button">Reportar</button>
+			</div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>Copyright &copy;2025 Dabe sites, HeitorMSCode. designed by <span>HeitorMSCode</span> Todos os direitos reservados</p>
+        </div>
+		
+    </footer>
+
+	</body>
+	</html>
+{% endblock %}
