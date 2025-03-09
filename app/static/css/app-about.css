@@ -6,7 +6,9 @@
 }
 
 .container {
-    margin: 90px;
+    margin-top: 90px;
+    margin-left: 90px;
+    margin-right: 90px;
 }
 
 .container h1 {
@@ -16,7 +18,7 @@
 
 .container h1 span {
     color: var(--text-ctrldash);
-    font-weight: 800; 
+    font-weight: 800;
 }
 
 .separation {
@@ -35,12 +37,13 @@
 .container-infos video {
     border: 2px solid var(--separation);
     border-radius: 15px;
-    width: 950px;
+    width: 1150px;
     margin-left: 90px;
 }
 
 .container-infos {
     display: flex;
+    margin-top: 21px;
 }
 
 .info p {
@@ -48,7 +51,7 @@
     width: 137px;
     font-size: 24px;
     font-weight: 500;
-    margin-left: 350px;
+    margin-left: 250px;
     margin-top: 50px;
 }
 
@@ -60,5 +63,5 @@
 .info img {
     width: 135px;
     margin-top: 80px;
-    margin-left: 340px;
+    margin-left: 240px;
 }
