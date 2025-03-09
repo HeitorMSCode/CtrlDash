@@ -4,4 +4,4 @@ def inicio(request):
     return render(request,'index.html')
 
 def sobre(request):
-    return render(request,'sobre.html')
+    return render(request,'about.html')

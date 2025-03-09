@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %} CtrlDash | Sobre {% endblock %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/app-about.css' %}">
+{% endblock %}
+
+{% block 'content' %}
+    <!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Oque a <span>CtrlDash</span> proporciona <br> a você?</h1>
+            <hr class="separation">
+            <h2>Vou explicar tudo que a <span>CtrlDash</span> pode fazer!</h2>
+        </div>
+
+        <div class="container-infos">
+            <video src="../static/assets/teste.mp4" controls></video>
+            <div class="info">
+                <img src="../static/assets/LogoText.png" alt="Logo">
+                <p>Este é um breve vídeo sobre tudo que você pode fazer com a <span>CtrlDash</span></p>
+            </div>
+        </div>
+    </body>
+    </html>
+{% endblock %}
